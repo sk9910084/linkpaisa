@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkPaisa — Link Shorten Karo, Paisa Kamao</title>
+<meta name="description" content="Free link shortener with OGAds earning. Apne links ko earning links me badlo — visitor ad page dekhega, aap kamaoge.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="./">🔗<span>Link<b>Paisa</b></span></a>
+    <nav>
+      <a href="#tool">Link Banao</a>
+      <a href="#how">Kaise Kaam Karta Hai</a>
+      <a href="#earn">Earning</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-small" href="#tool">Start Earning</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="badge">💯 100% Free &bull; Koi investment nahi</div>
+    <h1>Link Shorten Karo,<br><span class="gold">Paisa Kamao</span> 💸</h1>
+    <p class="sub">Apne lambi links ko <b>earning links</b> me badlo. Visitor ek chhota ad page dekhega, phir aapki OGAds locker link khulegi — har complete offer par <b>seedha aapke OGAds account me earning</b>, har hafte payout.</p>
+
+    <div class="tool-card" id="tool">
+      <h2>🚀 Apna Earning Link Banao</h2>
+      <label>1. Asli link (jahan visitor ko bhejna hai)</label>
+      <input type="url" id="destUrl" placeholder="https://example.com/meri-file-ya-page">
+      <label class="row-check"><input type="checkbox" id="useOgads" checked> 2. OGAds locker se earning <span class="tag">Recommended</span></label>
+      <div id="ogadsBox">
+        <input type="url" id="lockerUrl" placeholder="OGAds dashboard se bani locker link yahan paste karo">
+        <p class="hint">OGAds me <b>Content Locker / URL Locker</b> banao (5 minute ka kaam) → uski link yahan paste karo. Locker nahi hai? <a href="#" id="ogadsRefTop" target="_blank" rel="noopener">Yahan free OGAds account banao</a></p>
+      </div>
+      <button class="btn btn-big" id="makeLink">🔗 Shorten &amp; Earn</button>
+      <div id="result" class="result hidden">
+        <label>✅ Tumhara earning link taiyaar hai:</label>
+        <div class="link-row"><input type="text" id="outLink" readonly><button class="btn btn-small" id="copyBtn">Copy</button></div>
+        <button class="btn btn-ghost" id="tinyBtn">✂️ Ise aur chhota karo (is.gd)</button>
+        <div id="tinyOut" class="hidden">
+          <div class="link-row"><input type="text" id="tinyLink" readonly><button class="btn btn-small" id="copyTiny">Copy</button></div>
+        </div>
+        <p class="hint" id="tinyHint"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mylinks">
+  <div class="wrap">
+    <h2>📋 Mere Links</h2>
+    <p class="muted">Is browser me banaye gaye links yahan save rahenge.</p>
+    <div id="linksList" class="links-list"><p class="muted">Abhi koi link nahi banaya.</p></div>
+  </div>
+</section>
+
+<section class="how" id="how">
+  <div class="wrap">
+    <h2>⚙️ Kaise Kaam Karta Hai</h2>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>OGAds Account Banao</h3><p>Free signup karo <a href="#" class="refLink" target="_blank" rel="noopener">hamare referral link</a> se. Approval ke baad dashboard milega.</p></div>
+      <div class="step"><div class="n">2</div><h3>Locker Link Banao</h3><p>OGAds dashboard me <b>URL Locker</b> banao — apni asli link lock karo. Visitor ko offer complete karna hoga.</p></div>
+      <div class="step"><div class="n">3</div><h3>Earning Link Share Karo</h3><p>Locker link yahan paste karke earning link banao. WhatsApp, Telegram, Facebook par share karo — har conversion par earning!</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="earn" id="earn">
+  <div class="wrap">
+    <h2>💰 Dono Ki Kamai — Saaf Hisaab</h2>
+    <div class="earn-grid">
+      <div class="earn-card you">
+        <h3>🫵 Tumhari Kamai</h3>
+        <ul>
+          <li>Visitor tumhare OGAds locker par offer complete karega</li>
+          <li>Earning <b>seedha tumhare OGAds account</b> me jayegi</li>
+          <li>OGAds <b>weekly payout</b> deta hai — PayPal, Crypto, Wire, Direct Deposit</li>
+          <li>Tumhari earning me se <b>ek rupaya bhi nahi kat-ta</b> — 100% tumhara</li>
+        </ul>
+      </div>
+      <div class="earn-card me">
+        <h3>👨‍💻 Site Owner Ki Kamai</h3>
+        <ul>
+          <li>Countdown page par lagne wale <b>ads</b> se</li>
+          <li>Tum OGAds join karoge to <b>referral commission</b> se</li>
+          <li>Ye sab tumhari earning ko <b>chhue bina</b> hota hai</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ref-banner">
+      <div><h3>🎯 Abhi OGAds Account Nahi Hai?</h3><p>Free me join karo aur apne locker links banana shuru karo. 5 minute me setup.</p></div>
+      <a href="#" class="btn btn-big refLink" target="_blank" rel="noopener">Free OGAds Account Banao</a>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2>❓ FAQ</h2>
+    <details open><summary>Kya ye bilkul free hai?</summary><p>Haan, 100% free. Koi investment, koi hidden charge nahi. OGAds account bhi free hai.</p></details>
+    <details><summary>Payment kaise aur kab milega?</summary><p>OGAds tumhe <b>seedha</b> pay karta hai — har hafte (weekly), PayPal / Crypto / Wire / Direct Deposit se. Is site ko tumhare paise chhune ki zaroorat hi nahi.</p></details>
+    <details><summary>Kya bina OGAds ke link bana sakta hu?</summary><p>Haan! Bas locker wala tick hata do — simple short link ban jayega. Par earning ke liye OGAds locker zaroori hai.</p></details>
+    <details><summary>Kya main apna purana OGAds account use kar sakta hu?</summary><p>Bilkul. Apne dashboard se locker link banao aur yahan paste kar do.</p></details>
+    <details><summary>Mere links ka data kahan save hota hai?</summary><p>Tumhare apne browser me (localStorage). Koi server tumhara data store nahi karta — privacy by design.</p></details>
+    <details><summary>Kya spam ya galat links allowed hain?</summary><p>Bilkul nahi. Malware, phishing, ya spam links sakht mana hain — misuse par link kaam karna band ho sakta hai.</p></details>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><b>🔗 LinkPaisa</b> — free link shortener with OGAds earning.</p>
+    <p class="muted">Earnings OGAds ke terms par depend karti hain (country, offer, traffic quality). Koi earning guarantee nahi hai — mehnat aur sahi traffic hi kamaega. Ye site GitHub Pages par hosted hai.</p>
+  </div>
+</footer>
+
+<script src="assets/config.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
