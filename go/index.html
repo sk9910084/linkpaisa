@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkPaisa — Tumhara Link Taiyaar Ho Raha Hai…</title>
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="../assets/style.css">
+<!--
+  ================================================================
+  APNA AD CODE YAHAN PASTE KARO (Monetag / AdSense script tag)
+  Countdown page par jo ad dikhega, uski earning site owner ki hogi.
+  Example:
+  <script src="https://your-ad-network.com/tag.js"><\/script>
+  ================================================================
+-->
+</head>
+<body>
+<div class="go-wrap">
+  <div class="go-card">
+    <a class="logo" href="../" style="text-decoration:none">🔗<span>Link<b>Paisa</b></span></a>
+    <div id="loading">
+      <div class="spinner"></div>
+      <p class="muted">Link check ho raha hai…</p>
+    </div>
+    <div id="ready" class="hidden">
+      <h1>⏳ Tumhara link <span class="gold" id="secs">5</span> sec me taiyaar!</h1>
+      <p class="muted">Is page ko chalane wale ads se ye free service milti hai 🙏</p>
+
+      <div class="ad-slot" id="adSlot">📢 Ad space — yahan owner ka ad lagega</div>
+
+      <p class="dest-line">Tum yahan jaoge:<br><b id="destHost"></b></p>
+      <button class="btn btn-big" id="continueBtn" disabled>Continue →</button>
+
+      <p class="go-cta">💸 Khud ke <b>earning links</b> banana chahte ho? <a href="#" id="goRef" target="_blank" rel="noopener">Free OGAds account banao</a></p>
+    </div>
+    <div id="bad" class="hidden">
+      <h1>⚠️ Galat ya toota link</h1>
+      <p class="muted">Ye link sahi format me nahi hai. Link dene wale se dobara maango.</p>
+      <p><a href="../">← LinkPaisa home</a></p>
+    </div>
+  </div>
+</div>
+<script src="../assets/config.js"></script>
+<script src="../assets/go.js"></script>
+</body>
+</html>
